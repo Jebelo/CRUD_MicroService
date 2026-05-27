@@ -43,6 +43,8 @@ com.audifarma.customer/
 
 "C:\Program Files\NetBeans-24\netbeans\java\maven\bin\mvn.cmd" spring-boot:run  #Due to Maven issues with Netbeans, I have to run this command locally
 
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+
 ```bash
 # Build + run all tests + coverage report
 mvn clean verify
@@ -53,7 +55,7 @@ mvn spring-boot:run
 # Access
 # API:        http://localhost:8080/api/v1/clientes
 # Swagger UI: http://localhost:8080/swagger-ui.html
-# H2 Console: http://localhost:8080/h2-console  (JDBC URL: jdbc:h2:mem:customerdb)
+# H2 Console: http://localhost:8080/h2-console  (JDBC URL: jdbc:h2:mem:customerdb) docker profile jdbc:h2:file:/app/data/customerdb
 # Health:     http://localhost:8080/actuator/health
 ```
 

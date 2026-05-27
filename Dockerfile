@@ -14,6 +14,9 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+RUN mkdir -p /app/data && chown -R appuser:appgroup /app/data
+
 USER appuser
 
 COPY --from=build /app/target/customer-service-*.jar app.jar
