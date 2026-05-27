@@ -159,9 +159,13 @@ curl -X DELETE http://localhost:8080/api/v1/clientes/1/direcciones/2
 
 ## Testing
 
+Para los unit test "C:\Program Files\NetBeans-24\netbeans\java\maven\bin\mvn.cmd" test
+
+Para el integration test: "C:\Program Files\NetBeans-24\netbeans\java\maven\bin\mvn.cmd" -Dtest=ClienteControllerIntegrationTest test
+
 ```bash
 # Unit tests only
-mvn test
+mvn test #Este comando no funciona con netbeans, para poder ejecutar los test deben usarse los comandos de arriba desde cmd o powershell 
 
 # Unit + integration tests + coverage report
 mvn verify
