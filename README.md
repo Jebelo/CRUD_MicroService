@@ -4,6 +4,10 @@ REST microservice for managing customers (`Cliente`) and their addresses (`Direc
 
 ---
 
+GitHub profile: https://github.com/Jebelo
+
+Repository for this project: https://github.com/Jebelo/CRUD_MicroService
+
 ## Architecture
 
 ```
